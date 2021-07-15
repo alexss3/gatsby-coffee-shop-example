@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Layout.module.css';
+import React from "react"
+import * as styles from "./Layout.module.css"
 
 export default function Layout({ children }) {
   return (
@@ -9,9 +9,7 @@ export default function Layout({ children }) {
           <h1>Joe's Coffee Shop</h1>
         </div>
       </header>
-      <main id={styles.main}>
-        {children}
-      </main>
+      <main id={styles.main}>{children}</main>
     </div>
-  );
+  )
 }

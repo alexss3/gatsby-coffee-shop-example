@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react"
 
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from "gatsby"
 
-import Layout from '../components/Layout';
+import Layout from "../components/Layout"
 
-import styles from './index.module.css';
+import * as styles from "./index.module.css"
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
-  {
-    site {
-      siteMetadata {
-        title
+    {
+      site {
+        siteMetadata {
+          title
+        }
       }
     }
-  }
-`);
+  `)
 
   return (
     <Layout>
@@ -23,6 +23,5 @@ export default function IndexPage() {
         <h1>{data.site.siteMetadata.title}</h1>
       </div>
     </Layout>
-  );
+  )
 }
-
