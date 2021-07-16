@@ -3,6 +3,7 @@
   background: url("/coffee.jpg");
   background-size: cover;
   color: #ffffff;
+  font-size: 1.2rem;
 }
 
 #header #inner {
@@ -21,4 +22,8 @@
 #header a {
   color: white;
   text-decoration: none;
+  margin: 0.5rem;
+}
+
+#main {
 }

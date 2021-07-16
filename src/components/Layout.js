@@ -10,6 +10,7 @@ export default function Layout({ children }) {
           <h1>
             <Link to="/">Joe's Coffee Shop</Link>
           </h1>
+          <Link to="/menu">Menu</Link>
           <Link to="/blog">Blog</Link>
         </div>
       </header>
