@@ -19,4 +19,10 @@ categories:
         price: $2.49
       - name: Hot Cocoa
         price: $1.49
+  - name: Bakery
+    items:
+      - name: Scone
+        price: $3.99
+      - name: Donut
+        price: $1.99
 ---
