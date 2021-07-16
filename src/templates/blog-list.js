@@ -43,6 +43,7 @@ export const query = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { contentKey: { eq: "blog" } } }
       limit: $limit
       skip: $skip
     ) {
